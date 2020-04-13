@@ -37,8 +37,8 @@ class LoginActivity : AppCompatActivity() {
         progressBar=findViewById(R.id.progressBar_login)
         auth= FirebaseAuth.getInstance()
     }
-    fun forgotPassword(){
-
+    fun forgotPassword(view: View){
+        startActivity(Intent(this,ForgotActivity::class.java))
     }
 
     fun register(view: View){
@@ -67,7 +67,7 @@ class LoginActivity : AppCompatActivity() {
     }
     
     private fun action(){
-        startActivity(Intent(this,MainActivity::class.java))
+        startActivity(Intent(this,SuccessActivity::class.java))
 
     }
 }
