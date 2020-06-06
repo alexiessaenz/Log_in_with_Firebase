@@ -1,2 +1,2 @@
 # Log_in_with_Firebase
-## with activities
+## with activities and yep, without livedata...
